@@ -10,7 +10,7 @@ import SignupPage from './components/GettingStarted/Signup/SignupPage';
 import OnboardingNavBar from './components/NavBars/OnboardingNavBar';
 import PublicRoute from './auth/PublicRoute';
 import PrivateRoute from './auth/PrivateRoute';
-// import MainRoutes from "./components/Routes/Main.routes"
+import MainRoutes from "./components/Routes/Main.routes"
 
 
 
@@ -22,8 +22,8 @@ function App() {
         <GlobalStyles />
           <Routes>
             <Route path="signup" element={<SignupPage/>}/>
-            {/* <Route path="login" element={<LoginPage/>}/>
-            <Route path="*" element={<PrivateRoute Component = {MainRoutes}/>} /> */}
+            {/* <Route path="login" element={<LoginPage/>}/> */}
+            <Route path="*" element={<PrivateRoute Component = {MainRoutes}/>} /> 
           </Routes>
       </ThemeProvider>
     </BrowserRouter>

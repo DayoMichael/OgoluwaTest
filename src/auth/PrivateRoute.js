@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 import { isLogin } from "../utils/userLoggedInCheck";
 
 const PrivateRoute = ({Component}) => {
-  const auth = isLogin();
+  const auth = true //isLogin();
 
   return auth ? <Component /> : <Navigate to="/login" />
 };
