@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     background: #ffffff;
     margin: 0;
     padding: 0;
-    font-family: 'Cabinet Grotesk', sans-serif;
+    font-family: 'Cabinet Grotesk', sans-serif, "Roobert";
     /* transition: all 0.25s linear; */
   }
 `;

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function InputField({type, placeholder, className, onChange, min, value, max, label, bodyClass, name, onClick, autocomplete, small}) {
   return (
     <InputFieldView small={small}>
-        <div className = {`label ${bodyClass}`}>{label}</div>
+        <div className = {`label mt-4 ${bodyClass}`}>{label}</div>
         <div className = {`form-section ${bodyClass}`} onClick={onClick}>
             <input
                 id = "Bullets"
@@ -29,10 +29,9 @@ const InputFieldView = styled.div`
     width: 100% !important;
     .form-section{
         background: #FFFFFF;
-        border: 1px solid #CED4DA;
+        border-bottom: 3px solid #EBEBEB;
         box-sizing: border-box;
-        border-radius: 4px;
-        height: 56px;
+        height: 46px;
         width: ${props => props.small && "150px !important"}
         
     }
@@ -40,28 +39,25 @@ const InputFieldView = styled.div`
         display: flex;
         justify-content: center;
         background: #FFFFFF;
-        padding: ${props => props.small ? "15px" : "15px 30px"};
+        padding: ${props => props.small ? "15px" : " "};
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 18px;
-        line-height: 27px;
-        color: rgba(255, 255, 255, 0.5);
+        color: #373C56;
         border: none;
         height: 100%;
         width: 100%;
-        border-radius: 4px;
-        font-size: 14px;
-        line-height: 140%;
-        color: #8E9BAE;
     }
     .form-section{
         width: 100%
     }
 
-    input :focus {
+    input:focus {
         outline: none !important;
-        border: 1px solid "#FB5E04" ;
+        border-bottom: 3px solid #272262 !important ;
+        border: none;
     }
+    
     input{
 
     
@@ -84,9 +80,9 @@ const InputFieldView = styled.div`
     }
     .label {
         font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        color: #334155;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 10%;
+        color: #82869A;
     }
 `;

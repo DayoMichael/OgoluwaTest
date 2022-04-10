@@ -25,8 +25,8 @@ function LoginPage() {
   const handleChange = (e)=> {
     const {name,value} = e.target
     setInputValues({
-        ...inputValues,
-        [name]: value
+      ...inputValues,
+      [name]: value
     })
   }
 
@@ -87,7 +87,7 @@ function LoginPage() {
                     value = {inputValues.password}
                     min={2}
                     label= {"Password"}
-                    bodyClass={"mr-2 align-start mt-4 mr-2"}
+                    bodyClass={"mr-2 align-start mt-2 mr-2"}
                     name={"password"}
                     small={false}
                   />
