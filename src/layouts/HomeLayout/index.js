@@ -29,7 +29,7 @@ const MainView = styled.div`
     width: 100%;
     .inner-container {
         border-radius: 20px;
-        background: #E2E8F0;
+        background: #ffffff;
         padding: 44px 34px;
     }
 `;
